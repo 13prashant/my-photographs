@@ -39,7 +39,7 @@ export default function Carousel({
           className="pointer-events-none h-full w-full"
           alt="blurred background"
           fill
-          priority={true}
+          priority
         />
       </button>
       <SharedModal
