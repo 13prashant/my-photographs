@@ -69,7 +69,7 @@ export default function SharedModal({
                 initial="enter"
                 animate="center"
                 exit="exit"
-                className="absolute"
+                className="absolute h-full w-full"
               >
                 <Image
                   src={`https://res.cloudinary.com/${
@@ -77,10 +77,10 @@ export default function SharedModal({
                   }/image/upload/c_scale,${navigation ? 'w_1280' : 'w_1920'}/${
                     currentImage.public_id
                   }.${currentImage.format}`}
-                  width={navigation ? 1280 : 1920}
-                  height={navigation ? 853 : 1280}
+                  fill
+                  objectFit="contain"
                   priority
-                  alt="Next.js Conf image"
+                  alt="Photo by Prashant"
                   onLoad={() => setLoaded(true)}
                 />
               </motion.div>

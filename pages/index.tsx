@@ -123,5 +123,6 @@ export async function getStaticProps() {
     props: {
       images: reducedResults,
     },
+    revalidate: 600,
   }
 }

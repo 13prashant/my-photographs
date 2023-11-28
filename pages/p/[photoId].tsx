@@ -55,6 +55,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       currentPhoto: currentPhoto,
     },
+    revalidate: 600,
   }
 }
 
